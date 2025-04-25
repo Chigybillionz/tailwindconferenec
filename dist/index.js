@@ -128,7 +128,7 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
     document.getElementById("MYFORM").classList.add("hidden");
     const ticketG = document.getElementById("ticketG");
     ticketG.classList.remove("hidden");
-    ticketG.classList.add("opacity-500");
+    ticketG.classList.add("opacity-00");
 
   }
 });
@@ -179,6 +179,12 @@ document
         document.getElementById("preview").src = e.target.result;
         document.getElementById("preview").style.display = "block";
         document.getElementById("buttons").style.display = "block";
+        const uploadIcon = document.getElementById("profile-Pic");
+        uploadIcon.style.display = "none";
+        const dragText = document.querySelector(".paragraph");
+      if (dragText) {
+        dragText.style.display = "none";
+      }
       };
       reader.readAsDataURL(file);
     }
