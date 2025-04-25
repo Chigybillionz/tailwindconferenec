@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"
+  integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-blue-900">
@@ -44,7 +49,6 @@
         </div>
       </label>
     </div>
-  </div>
 
   <div class="infoimage">
     <img src="images/icon-info.svg" alt="" class=" absolute top-140 w-8 left-155"> 
@@ -61,25 +65,25 @@
         <label for="name"></label> <br><br><br>
         <div class="input-control" >
           Full Name <br>
-          <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" class=" border-2 rounded-2xl w-165 h-15 left-155"> <br>
+          <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" class=" border-2 rounded-2xl w-165 h-13 left-155"> <br>
           
           <span class="error" id="nameError"></span>
         </div> <br>
         <div class="input-control">
           Email Address <br>
-          <input type="email" placeholder="chigozie@email.com" name="femail" id="email" class="  border-2 rounded-2xl w-165 h-15 left-155"><br>
+          <input type="email" placeholder="chigozie@email.com" name="femail" id="email" class="  border-2 rounded-2xl w-165 h-13 left-155"><br>
           <span class="error" id="emailError"></span>
 
           <label for="email"></label>
         </div> <br>
         <!-- <div class="input-control h-12 w-64"> <br> <br> <br>  -->
           GitHub Username <br>
-          <input type="text" placeholder="@Yourusername" name="fgithub" id="github" class=" border-2 rounded-2xl w-165 h-15 left-155"> <br>
+          <input type="text" placeholder="@Yourusername" name="fgithub" id="github" class=" border-2 rounded-2xl w-165 h-13 left-155"> <br>
           <span class="error" id="githubError"></span>
-        </div> 
+        </div> <br>
         <div class="input-control ">
           <a href="#">
-            <button type="submit" id="submit" class="box absolute bg-red-500 w-165 py-2 px-2 h-15  rounded-2xl top-104 left-0"> Generate My Ticket
+            <button type="submit" id="submit" class="box absolute bg-red-500 w-165 py-2 px-2 h-15  rounded-2xl top-106 left-0"> Generate My Ticket
             </button>
           </a>
         </div>
@@ -92,29 +96,27 @@
   </div>
 <!-- </div> -->
   <!-- Form ends -->
-
+  <!-- absolute top-300 left-155 hidden -->
 
   <!-- this below will be the form that will appear as congrats -->
   <!-- Generated tickets starts -->
 
-  <div class="ticketG hidden" id="ticketG">
-    <img src="images/logo-full.svg" alt="ticket generate log">
+  <div class="ticketG hidden absolute inset-0   z-50 transition-opacity duration-1000 opacity-0 left-155" id="ticketG">
+       <img src="images/logo-full.svg" alt="ticket generate log" class="imagephoto absolute left-50">
     <h2> <br>
-      <p>Congrats, <span id="nameShow"><br> </span>!<br> Your ticket is <br> ready.</p>
+      <p class="congratText text-6xl font-bold text-white -500 absolute top-12  flex justify-center p-4 left-1 tracking-wider">Congrats,! <br> Your ticket is ready.</p>
     </h2>
 
-    <p>We've emailed your ticket to <br><span
-        id="emailShow">
-        <br></span> and will send
+    <p class="weEmailyou absolute top-68 text-2xl left-32">We've emailed your ticket to <br> and will send
       <br>updates in the run up to the event.
     </p> <br> <br> <br>
 
     <div class="submittion">
       <!-- this container contain the image that hold the registrer ticket -->
-      <img src="images/pattern-ticket.svg" alt="image-container">
+      <img src="images/pattern-ticket.svg" alt="image-container" class="absolute top-110">
       <div class="toplogo">
-        <img src="images/logo-full.svg" alt="congrateform">
-        <h6 id="date" class="date">Austin, TX</h6>
+        <img src="images/logo-full.svg" alt="congrateform" class="absolute top-115 left-5">
+        <h6 id="date" class="date absolute top-121 left-44">/Austin, TX</h6>
       </div>
       <div class="toplogo2">
         <div id="picture">
@@ -122,7 +124,7 @@
         </div>
 
         <p id="gitshow"><span id="gitshow"></span></p>
-        <img src="images/icon-github.svg" id="gitt" alt="">
+        <img src="images/icon-github.svg" id="gitt" alt="" class="absolute top-150 left-26">
         <p> <span id="nameF"></span> </p>
 
 
@@ -133,24 +135,25 @@
       </div>
     </div>
     <div class="rotate" id="random">
-      <p>#</p>
+      <p class="absolute top-126 left-99 transform rotate-90">#</p>
     </div>
 
     <div id="backgroundCarddesign">
       <!-- this is for the below background line design -->
-      <img src="images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="">
+      <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="relative top-118 right-127 h-fit w-fit">
     </div>
     <div class="topdesignlogo">
-      <img src="images/pattern-squiggly-line-top.svg" alt="">
+      <img src="images/pattern-squiggly-line-top.svg" alt="" class=" relative bottom-110 left-150 w-fit>
     </div>
     <div id="backgroundPattern">
-      <img src="assets/images/pattern-lines.svg" alt="">
+      <!-- <img src="images/pattern-lines.svg" alt="" class="absolute top-150 left-0 w-ful"> -->
     </div>
   </div>
+
   
   <script src="index.js"></script>
 </body>
-<footer style="background-image: url(assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg);"></footer>
+<footer style="background-image: url(images/pattern-squiggly-line-bottom-mobile-tablet.svg);"></footer>
 
 </html>
 

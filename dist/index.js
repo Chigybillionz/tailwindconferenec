@@ -13,7 +13,7 @@ document
         document.getElementById("uploadText").textContent =
           "Upload your photo (JPG or PNG, max size: 500KB)";
         document.getElementById("uploadText").style.color = "red";
-        // document.getElementById("img2").style.backgroundColor = "red";
+        document.getElementById("img2").style.backgroundColor = "red";
         event.target.value = "";
         return;
       } else {
@@ -79,6 +79,7 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
   ) {
     document.getElementById("nameError").textContent =
       "please enter a valid name...";
+      document.getElementById("nameError").style.color = "red";
     valid = false;
   } else {
     document.getElementById("nameError").textContent = "";
@@ -87,9 +88,10 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
 
   //email validation
   const email = document.getElementById("email").value;
-  if (email === "" || /^[^\s]+@[^\s@]+\.[^\s@]$/.test(email)) {
+  if (email === "" || /^[^\s@]+@[^\s@]+\.[^\s@]$/.test(email)) {
     document.getElementById("emailError").textContent =
       "please enter a valid email address..";
+      document.getElementById("emailError").style.color = "red";
     valid = false;
   } else {
     document.getElementById("emailError").textContent = "";
@@ -97,9 +99,10 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
   console.log(email);
   //github validation
   const github = document.getElementById("github").value;
-  if (github === "" || !/^[@]+$/ || github.length < 4) {
+  if (github === "" || !/^@/.test(github) || github.length < 4) {
     document.getElementById("githubError").textContent =
       "please eneter a valid  github acc...";
+      document.getElementById("githubError").style.color = "red";
     valid = false;
   } else {
     document.getElementById("githubError").textContent = "";
@@ -107,8 +110,8 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
   console.log(github);
   // image validation
   // const preview = document.getElementById("preview").src;
-  const profiel = document.getElementById("input-file").value;
-  if (profiel === "") {
+  const profile= document.getElementById("input-file").value;
+  if (profile === "") {
     document.getElementById("uploadText").textContent =
       " Upload your photo (JPG or PNG, max size: 500KB).";
     valid = false;
@@ -120,8 +123,13 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
   }
 
   if (valid) {
-    document.getElementById("ticketG").style.display = "block";
-    this.style.display = "none";
+    // document.getElementById("ticketG").style.display = "block";
+    // this.style.display = "none";
+    document.getElementById("MYFORM").classList.add("hidden");
+    const ticketG = document.getElementById("ticketG");
+    ticketG.classList.remove("hidden");
+    ticketG.classList.add("opacity-500");
+
   }
 });
 
