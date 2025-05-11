@@ -525,6 +525,9 @@
   .bg-fixed {
     background-attachment: fixed;
   }
+  .bg-scroll {
+    background-attachment: scroll;
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -915,6 +918,279 @@
   }
   .sm\:text-7xl {
     @media (width >= 40rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .xl\:absolute {
+    @media (width >= 80rem) {
+      position: absolute;
+    }
+  }
+  .xl\:relative {
+    @media (width >= 80rem) {
+      position: relative;
+    }
+  }
+  .xl\:top-1 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 1);
+    }
+  }
+  .xl\:top-8 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:top-12 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:top-20 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:top-49 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 49);
+    }
+  }
+  .xl\:top-60 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 60);
+    }
+  }
+  .xl\:top-74 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 74);
+    }
+  }
+  .xl\:top-117 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 117);
+    }
+  }
+  .xl\:top-121 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 121);
+    }
+  }
+  .xl\:top-129 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 129);
+    }
+  }
+  .xl\:top-141 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 141);
+    }
+  }
+  .xl\:top-144 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 144);
+    }
+  }
+  .xl\:top-154 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 154);
+    }
+  }
+  .xl\:top-155 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 155);
+    }
+  }
+  .xl\:top-163 {
+    @media (width >= 80rem) {
+      top: calc(var(--spacing) * 163);
+    }
+  }
+  .xl\:right-109 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 109);
+    }
+  }
+  .xl\:right-127 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * 127);
+    }
+  }
+  .xl\:left-0 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:left-3 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 3);
+    }
+  }
+  .xl\:left-8 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:left-40 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:left-61 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 61);
+    }
+  }
+  .xl\:left-67 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 67);
+    }
+  }
+  .xl\:left-75 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 75);
+    }
+  }
+  .xl\:left-79 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 79);
+    }
+  }
+  .xl\:left-80 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 80);
+    }
+  }
+  .xl\:left-86 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 86);
+    }
+  }
+  .xl\:left-100 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 100);
+    }
+  }
+  .xl\:left-101 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 101);
+    }
+  }
+  .xl\:left-109 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 109);
+    }
+  }
+  .xl\:left-116 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 116);
+    }
+  }
+  .xl\:left-155 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 155);
+    }
+  }
+  .xl\:left-160 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 160);
+    }
+  }
+  .xl\:left-164 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 164);
+    }
+  }
+  .xl\:left-250 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 250);
+    }
+  }
+  .xl\:left-316 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 316);
+    }
+  }
+  .xl\:left-360 {
+    @media (width >= 80rem) {
+      left: calc(var(--spacing) * 360);
+    }
+  }
+  .xl\:h-fit {
+    @media (width >= 80rem) {
+      height: fit-content;
+    }
+  }
+  .xl\:w-0 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 0);
+    }
+  }
+  .xl\:w-8 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 8);
+    }
+  }
+  .xl\:w-40 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:w-72 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 72);
+    }
+  }
+  .xl\:w-115 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 115);
+    }
+  }
+  .xl\:w-165 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 165);
+    }
+  }
+  .xl\:w-\[800px\] {
+    @media (width >= 80rem) {
+      width: 800px;
+    }
+  }
+  .xl\:w-\[1100px\] {
+    @media (width >= 80rem) {
+      width: 1100px;
+    }
+  }
+  .xl\:w-\[1250px\] {
+    @media (width >= 80rem) {
+      width: 1250px;
+    }
+  }
+  .xl\:w-fit {
+    @media (width >= 80rem) {
+      width: fit-content;
+    }
+  }
+  .xl\:bg-\[url\(\'images\/background-desktop\.png\'\)\] {
+    @media (width >= 80rem) {
+      background-image: url('images/background-desktop.png');
+    }
+  }
+  .xl\:text-4xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .xl\:text-6xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .xl\:text-7xl {
+    @media (width >= 80rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
     }
