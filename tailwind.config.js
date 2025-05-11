@@ -8,7 +8,8 @@ module.exports = {
         
         },
                 backgroundImage: {
-                  'mobile': "url('images/background-mobile.png')",
+                  // 'mobile': "url('images/background-mobile.png')",
+                  'mobile': "bg-gradient-to-b from-[#1E1E2F] to-[#1E1E2F]",
                   'desktop': "url('images/background-desktop.png')",
                 },
               },
