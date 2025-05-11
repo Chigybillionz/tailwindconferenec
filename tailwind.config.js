@@ -1,7 +1,12 @@
 module.exports = {
+  mode: 'jit', // Enable Just-In-Time mode for faster builds
+  content: [
+    './dist/**/*.html', // Include all HTML files in the dist folder
+    './dist/**/*.js',   // Include all JS files in the dist folder
+  ],
     theme: {
         screens: {
-        'sm': '360px',
+        'sm': '375px',
         'md': '768px',
         'lg': '1024px',
         'xl': '1280px',
