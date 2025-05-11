@@ -1,6 +1,4 @@
-document.body.style.backgroundImage =
-  "url('images/background-mobile.png')";
-document.body.style.color = "white";
+
 
 //to upload image from the gallery and the image must be less than 500kb
 document
@@ -53,16 +51,7 @@ document
       };
     }
   });
-// this is to get the image that was uploaded to save onn the succesful card
-function updatedProfile() {
-  const storedImage = localStorage.getItem("uploadImage");
 
-  if (storedImage) {
-    document.getElementById("pics").src = storedImage;
-    document.getElementById("pics").style.display = "block";
-  }
-}
-window.addEventListener("DOMContentLoaded", updatedProfile);
 
 // form validation
 document.getElementById("MYFORM").addEventListener("submit", function (event) {
@@ -109,7 +98,7 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
   }
   console.log(github);
   // image validation
-  // const preview = document.getElementById("preview").src;
+  const preview = document.getElementById("preview").src;
   const profile= document.getElementById("input-file").value;
   if (profile === "") {
     document.getElementById("uploadText").textContent =
@@ -120,15 +109,16 @@ document.getElementById("MYFORM").addEventListener("submit", function (event) {
     document.getElementById("uploadText").textContent =
       " Upload your photo (JPG or PNG, max size: 500KB).";
     document.getElementById("uploadText").style.color = "white";
-  }
+    
+  
+} 
+  
 
   if (valid) {
-    // document.getElementById("ticketG").style.display = "block";
-    // this.style.display = "none";
     document.getElementById("MYFORM").classList.add("hidden");
     const ticketG = document.getElementById("ticketG");
     ticketG.classList.remove("hidden");
-    ticketG.classList.add("opacity-00");
+    ticketG.classList.add("opacity-100");
 
   }
 });
@@ -161,12 +151,41 @@ function fun1() {
   out2.innerHTML = email.value;
   out3.innerHTML = githb.value;
   out4.innerHTML = txt1.value;
-  imgU.innerHTML = picture.value;
+  // imgU.innerHTML = picture.value;
+  // Retrieve the image from localStorage and set it as the src
+  const storedImage = localStorage.getItem("uploadImage");
+  if (storedImage) {
+    imgU.src = storedImage; // Set the image source
+    imgU.style.display = "block"; // Ensure the image is visible
+  }
+  
 
   let randomvalue = Math.floor(Math.random() * 900000);
   gerationofrandomno.innerHTML = `#${randomvalue}`;
   document.getElementById("date").innerHTML = formatedate;
 }
+document.getElementById("input-file").addEventListener("change", function (event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      localStorage.setItem("uploadImage", e.target.result); // Save the image to localStorage
+    };
+    reader.readAsDataURL(file); // Convert the file to a Base64 string
+  }
+});
+
+function updatedProfile() {
+  const storedImage = localStorage.getItem("uploadImage");
+
+  if (storedImage) {
+    const pics = document.getElementById("pics");
+    pics.src = storedImage; // Set the image source
+    pics.style.display = "block"; // Ensure the image is visible
+  }
+}
+
+window.addEventListener("DOMContentLoaded", updatedProfile);
 btn1.addEventListener("click", fun1);
 
 document
@@ -197,6 +216,9 @@ document.getElementById("removeBtn").addEventListener("click", function () {
   document.getElementById("input-file").value = "";
   document.getElementById("buttons").style.display = "none";
   document.querySelector(".paragraph").style.display = "block";
+  document.getElementById("profile-Pic").style.display = "block";
+  document.querySelector(".paragraph").style.display = "center";
+ 
 
 });
 
