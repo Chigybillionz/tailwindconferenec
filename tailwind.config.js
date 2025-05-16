@@ -25,11 +25,12 @@ module.exports = {
   content: [
     './dist/**/*.html', // Include all HTML files in the dist folder
     './dist/**/*.js',   // Include all JS files in the dist folder
+    './src/**/*.html',
+  './src/**/*.js',
   ],
   theme: {
     screens: {
-      'xs': '320px', // Custom mobile size for very small devices
-      'sm': '480px', // Small devices (default mobile size)
+      'sm': '320px', // Small devices (default mobile size)
       'md': '768px', // Medium devices (tablets)
       'lg': '1024px', // Large devices (desktops)
       'xl': '1280px', // Extra large devices

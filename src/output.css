@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.6 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -215,6 +215,9 @@
   .top-14 {
     top: calc(var(--spacing) * 14);
   }
+  .top-15 {
+    top: calc(var(--spacing) * 15);
+  }
   .top-20 {
     top: calc(var(--spacing) * 20);
   }
@@ -293,11 +296,26 @@
   .left-10 {
     left: calc(var(--spacing) * 10);
   }
+  .left-15 {
+    left: calc(var(--spacing) * 15);
+  }
+  .left-18 {
+    left: calc(var(--spacing) * 18);
+  }
+  .left-22 {
+    left: calc(var(--spacing) * 22);
+  }
   .left-24 {
     left: calc(var(--spacing) * 24);
   }
   .left-25 {
     left: calc(var(--spacing) * 25);
+  }
+  .left-26 {
+    left: calc(var(--spacing) * 26);
+  }
+  .left-28 {
+    left: calc(var(--spacing) * 28);
   }
   .left-29 {
     left: calc(var(--spacing) * 29);
@@ -370,6 +388,9 @@
   }
   .inline-block {
     display: inline-block;
+  }
+  .table {
+    display: table;
   }
   .h-6 {
     height: calc(var(--spacing) * 6);
@@ -446,6 +467,9 @@
   .w-\[442px\] {
     width: 442px;
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -455,6 +479,9 @@
   .max-w-4xl {
     max-width: var(--container-4xl);
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .rotate-90 {
     rotate: 90deg;
   }
@@ -463,6 +490,9 @@
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -580,11 +610,18 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
   }
   .opacity-100 {
     opacity: 100%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -988,6 +1025,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1146,6 +1188,7 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
