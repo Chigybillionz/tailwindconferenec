@@ -9,7 +9,6 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '320px', // Small devices (default mobile size)
       'md': '768px', // Medium devices (tablets)
       'lg': '1024px', // Large devices (desktops)
       'xl': '1280px', // Extra large devices
