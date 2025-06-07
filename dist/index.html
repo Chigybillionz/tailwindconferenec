@@ -12,9 +12,14 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+  <style>
+    * {
+      outline: solid 1px red;
+    }
+  </style>
 </head>
 
-<body class="bg-fixed  md:h-screen h-screen  w-11/12 text-white md:bg-[url('images/background-desktop.png')] 
+<body class="bg-fixed  md:h-screen h-screen  w-screen text-white md:bg-[url('images/background-desktop.png')] 
   bg-[url('images/background-mobile.png')] bg-no-repeat">
   <div class="absolute top-5 right-0 md:top-15 md:right-8 w-40 md:w-96 p-4 md:left-360">
     <img src="images/pattern-squiggly-line-top.svg" alt="">
@@ -36,14 +41,14 @@
       p-3 md:left-86 left-17 tracking-wider md:w-[1250px] w-[300px]">
       Your Journey to Coding Conf 2025 Starts Here!</h2>
     <p
-      class="text-center text-white -600  absolute flex justify-center p-4 md:left-100 left-9 md:top-65 top-53 md:text-4xl text-2xl  md:w-[1100px] w-[400px]">
+      class="text-center text-white -600  absolute flex justify-center p-4 md:left-100 left-15 md:top-65 top-53 md:text-4xl text-2xl  md:w-[1100px] w-[320px]">
       Secure your spot at next year's biggest coding conference.</p>
     <div>
       <h5 id="textUP" class="absolute md:top-89 top-80 md:left-155 left-4">Upload Avatar
       </h5>
     </div>
 
-    <div id="Drag" class="absolute items-center border-2  border-dashed rounded-2xl md:w-165 w-96 h-40 md:left-155 left-4 md:top-100 top-90 
+    <div id="Drag" class="absolute items-center border-2  border-dashed rounded-2xl md:w-165 w-96 h-40 md:left-155 left-1 md:top-100 top-90 
       transition-transform-300 duration-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
 
       <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
@@ -75,9 +80,9 @@
     </div>
 
     <!-- first form -->
-    <div class="absolute form-container md:top-150 top-135  md:w-165 w-105  h-20 md:left-155 left-4">
+    <div class="absolute form-container md:top-150 top-135  md:w-165 w-96  h-20 md:left-155 left-1">
       <form action="null" id="myForm">
-        <div class="formview  text-white w-full">
+        <div class="formview  text-white">
           <label for="name"></label> <br><br><br>
           <div class="input-control">
             Full Name
