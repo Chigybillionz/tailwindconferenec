@@ -10,100 +10,85 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
-<body
-  class=" bg-fixed  md:h-screen h-screen md:w-screen w-11/12 text-white md:bg-[url('images/background-desktop.png')] bg-[url('images/background-mobile.png')] overflow-x">
- <div class="absolute top-5 right-0 md:top-8 md:right-8 w-40 md:w-40 p-4">
-  <img src="images/pattern-squiggly-line-top.svg" alt="">
-</div>
-<div id="MYFORM" class="relative max-w-11/12 mx-auto p-4  rounded-lg flex items-center justify-center">
-  <div id="backgroungLine">
+<body class="bg-fixed  md:h-screen h-screen  w-11/12 text-white md:bg-[url('images/background-desktop.png')] 
+  bg-[url('images/background-mobile.png')] bg-no-repeat">
+  <div class="absolute top-5 right-0 md:top-15 md:right-8 w-40 md:w-96 p-4 md:left-360">
+    <img src="images/pattern-squiggly-line-top.svg" alt="">
   </div>
-  <div id="backgroungCircle1">
-    <img src="images/pattern-circle.svg" class="absolute top-150 md:left-316 left-40 md:w-40 w-19">
-  </div>
-  <div id="backgroungCircle2">
-    <img src="images/pattern-circle.svg">
-  </div>
-  <div class=" absolute md:top-8 top-10 left-30 right-10 md:left-0 items-center flex mx-auto justify-center p-2">
-    <!-- this is for the top logo -->
-    <img src="images/logo-full.svg" class="h-6">
-  </div>
- 
-  <h2
-    class="text-center md:text-7xl text-3xl font-bold text-white -500 absolute md:top-20 top-20  flex justify-center p-3 md:left-100 left-17 tracking-wider md:w-[1250px] w-[310px]">
-    Your Journey to Coding Conf  2025 Starts Here!</h2>
-  <p class="text-center text-white -600  absolute flex justify-center p-4 md:left-116 left-9 md:top-60 top-53 md:text-4xl text-2xl  md:w-[1100px] w-[340px]">Secure
-    your spot at next year's biggest coding conference.</p>
-  
+  <div id="MYFORM" class="relative max-w-11/12 mx-auto p-4  rounded-lg flex items-center justify-center">
+    <div id="backgroungLine">
+    </div>
+    <div id="backgroungCircle1">
+      <img src="images/pattern-circle.svg" class="absolute top-150 md:left-316 left-40 md:w-40 w-19">
+    </div>
+    <div id="backgroungCircle2" class="absolute md:left-0">
+      <img src="images/pattern-circle.svg">
+    </div>
+    <div class="absolute md:top-8 top-10 left-30 right-10 md:left-210 items-center md:w-80">
+      <img src="images/logo-full.svg" class="h-6">
+    </div>
 
-<!-- 
-  <div class="max-w-xl mx-auto text-center space-y-6">
-    <h2 class="font-bold text-3xl ">
+    <h2 class="text-center md:text-7xl text-3xl font-bold text-white -500 absolute md:top-20 top-20  flex justify-center 
+      p-3 md:left-86 left-17 tracking-wider md:w-[1250px] w-[300px]">
       Your Journey to Coding Conf 2025 Starts Here!</h2>
-    <p class="text-2xl font-semibold">
-      Secure
-      your spot at next year's biggest coding conference.</p>
-  </div> -->
+    <p
+      class="text-center text-white -600  absolute flex justify-center p-4 md:left-100 left-9 md:top-65 top-53 md:text-4xl text-2xl  md:w-[1100px] w-[400px]">
+      Secure your spot at next year's biggest coding conference.</p>
+    <div>
+      <h5 id="textUP" class="absolute md:top-89 top-80 md:left-155 left-4">Upload Avatar
+      </h5>
+    </div>
 
+    <div id="Drag" class="absolute items-center border-2  border-dashed rounded-2xl md:w-165 w-96 h-40 md:left-155 left-4 md:top-100 top-90 
+      transition-transform-300 duration-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
 
-  <div>
-    <h5 id="textUP" class=" absolute top-80 left-4">Upload Avatar
-    </h5>
-  </div>
-  <!-- <label for="input-file" class="avatar-input"> -->
-
-
-  <div id="Drag"
-    class="absolute items-center border-2  border-dashed rounded-2xl md:w-screen  w-96 h-40  left-4 md:top-90 top-90 transition-transform-300 duration-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
-    
-    <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
-    <label for="input-file" class="avatar-input absolute inset-0 flex items-center justify-center cursor-pointer">
-
-
-      <img id="preview" src="" class="hidden absolute h-20 w-20  md:left-75 left-3-30 top-2 rounded-2xl border ">
       <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
-
-      <div id="uploadconntainer" class="flex items-center ">
-        <img src="images/icon-upload.svg" id="profile-Pic"
-          class="w-20  absolute md:left-75 left-41 p-4 top-4 border rounded-2xl">
-        <div class="paragraph  relative flex justify-center p-4 md:left-8 left-1 top-10 inset-0  ">Drag and drop or click to
-          upload</div>
+      <label for="input-file" class="avatar-input absolute inset-0 flex items-center justify-center cursor-pointer">
+        <img id="preview" src="" class="hidden absolute h-20 w-20  md:left-75 left-3-30 top-2 rounded-2xl border ">
         <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
-        <img id="preview" src="" alt="images" class="hidden">
-        <div id="buttons" class="mt-2  relative md:top-12 top-10  md:left-3 left-3 hidden">
-          <button id="removeBtn" onclick="showuserI()" class="bg-red-500 text-white px-4 py-2 rounded">Remove
-            image</button>
-          <button id="changeBtn" onclick="showuserI()" class="bg-blue-500 text-white px-4 py-2 rounded ml-2">Change
-            image</button>
+        <div id="uploadconntainer" class="flex items-center ">
+          <img src="images/icon-upload.svg" id="profile-Pic"
+            class="w-20  absolute md:left-75 left-41 p-4 top-4 border rounded-2xl">
+          <div class="paragraph  relative flex justify-center p-4 md:left-8 left-1 top-10 inset-0  ">
+            Drag and drop or click to upload</div>
+          <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
+          <img id="preview" src="" alt="images" class="hidden">
+          <div id="buttons" class="mt-2  relative md:top-12 top-10  md:left-3 left-3 hidden">
+            <button id="removeBtn" onclick="showuserI()"
+              class="bg-transparent border-2 text-white px-4 py-2 rounded">Remove
+              image</button>
+            <button id="changeBtn" onclick="showuserI()"
+              class="bg-transparent border-2 text-white px-4 py-2 rounded ml-2">Change
+              image</button>
+          </div>
         </div>
-      </div>
-    </label>
-  </div>
+      </label>
+    </div>
+    <div class="infoimage">
+      <img src="images/icon-info.svg" alt="" class="absolute md:top-145 top-140 md:w-8 w-5 md:left-155 left-4">
+      <span id="uploadText" class="absolute md:top-146 top-139 md:left-164 left-10">Upload your photo (JPG or PNG, max
+        size:500KB).</span>
+    </div>
 
-  <div class="infoimage">
-    <img src="images/icon-info.svg" alt="" class=" absolute top-140 md:w-8 w-5 md:left-155 left-4">
-    <span id="uploadText" class="absolute md:top-141 top-139 md:left-164 left-10">Upload your photo (JPG or PNG, max size:500KB).</span>
-  </div>
-
-
-
-  <!-- first form -->
-  <div class="absolute form-container  top-135  md:w-165 w-105  h-20 md:left-155 left-4">
-    <form action="null" id="myForm">
+    <!-- first form -->
+    <div class="absolute form-container md:top-150 top-135  md:w-165 w-105  h-20 md:left-155 left-4">
+      <form action="null" id="myForm">
         <div class="formview  text-white w-full">
           <label for="name"></label> <br><br><br>
           <div class="input-control">
-            Full Name <br>
-            <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat"
-              class="border-2 md:w-165 w-96 h-13 left-155 focus:border-transparent-500  transition duration-300 transition-transform-300  transform hover:scale-101 hover:shadow-lg bg-transparent rounded-2xl">
-            <br> 
+            Full Name
+            <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" class="border-2 md:w-165 w-96 h-13 left-155 focus:border-transparent-500  transition duration-300 transition-transform-300  
+              transform hover:scale-101 hover:shadow-lg bg-transparent rounded-2xl">
+            <br>
 
             <span class="error" id="nameError"></span>
           </div> <br>
           <div class="input-control">
-            Email Address <br>
+            Email Address
             <input type="email" placeholder="chigozie@email.com" name="femail" id="email"
               class="  border-2 pl-4 rounded-2xl md:w-165 w-96   h-13 left-155  focus:border-transparent-500  transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent ">
             <span class="error" id="emailError"></span>
@@ -111,7 +96,7 @@
             <label for="email"></label>
           </div> <br>
           <!-- <div class="input-control h-12 w-64"> <br> <br> <br>  -->
-          GitHub Username <br>
+          GitHub Username
           <input type="text" placeholder="@Yourusername" name="fgithub" id="github"
             class="border-2 rounded-2xl md:w-165 w-96 h-13 left-95  focus:border-transparent-900 transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
           <br>
@@ -125,72 +110,74 @@
             </button>
           </a>
         </div>
-        <div id="submitlogodesign" class=" absolute md:top-49 top-77 md:right-109 right-30 md:h-fit h-29 w-96  z-[-1]">
-          <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt=""
->
+        <div id="submitlogodesign"
+          class=" absolute md:top-41 top-77 md:right-40 right-30 md:h-fit h-29 md:w-250 w-96  z-[-1]">
+          <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt="">
         </div>
+    </div>
+    </form>
   </div>
-  </form>
-</div>
 
+  <!-- Generated tickets starts -->
 
-<!-- this below will be the form that will appear as congrats -->
-<!-- Generated tickets starts -->
-
-<div class="ticketG hidden absolute inset-0   z-50 transition-opacity duration-500 opacity-0 md:left-109 left-0" id="ticketG">
-  <div class="absolute md:w-0 w-72 md:top-8 top-6">
-  <img src="images/logo-full.svg" alt="ticket generate log" class="imagephoto relative md:left-101 left-29  w-44 md:w-72 ">
-</div>
-  <br>
-  <div class="absolute md:left-0 left-6  md:w-[1100px] w-[405px]">
-  <p class="congratText text-center md:text-6xl text-4xl font-bold text-white -500 md:absolute relative  md:top-20 top-14  ">Congrats, <span
-      id="nameShow" class="text-orange-400 "></span>! Your ticket is ready.</p>
+  <div class="ticketG hidden absolute inset-0 z-50 transition-opacity duration-500 opacity-0 md:left-109 left-0"
+    id="ticketG">
+    <div class="absolute md:w-72 w-72 md:top-8 top-6 ">
+      <img src="images/logo-full.svg" alt="ticket generate log"
+        class="imagephoto relative md:absolute left-29  w-44 md:w-72 md:left-100 ">
     </div>
-
-
-  <p class="weEmailyou absolute md:top-74 top-59 text-2xl md:left-40 left-0 text-center leading-relaxed md:w-[800px] w-[442px]">We've emailed your ticket to <br>
-    <span class="text-orange-400" id="emailShow"> </span> and will send updates in <br> the run up to the event.</p>
-  <br>
-
-  <div class="submittion">
-    <!-- this container contain the image that hold the registrer ticket -->
-    <img src="images/pattern-ticket.svg" alt="image-container" class="absolute  md:top-117 top-110 w-120   md:left-61 left-0">
-    <div class="toplogo">
-      <img src="images/logo-full.svg" alt="congrateform" class="absolute md:top-121 top-113 md:left-67 left-8 md:w-72 w-58">
-      <h6 id="date" class="date absolute md:top-129 top-122 md:left-79 left-25 font-light">/Austin, TX</h6>
+    <br>
+    <div class="absolute md:left-0 left-6  md:w-[1100px] w-[405px]">
+      <p
+        class="congratText text-center md:text-6xl text-4xl font-bold text-white -500 md:absolute relative  md:top-20 top-14  ">
+        Congrats, <span id="nameShow" class="text-orange-400 "></span>! Your ticket is ready.</p>
     </div>
-    <div class="toplogo2">
-      <div id="picture">
-        <span id="picture"> <img id="picture" src=""> </span>
+    <p
+      class="weEmailyou absolute md:top-74 top-59 text-2xl md:left-40 left-0 text-center leading-relaxed md:w-[800px] w-[442px]">
+      We've emailed your ticket to <br>
+      <span class="text-orange-400" id="emailShow"> </span> and will send updates in <br> the run up to the event.
+    </p>
+    <br>
+
+    <div class="submittion">
+      <!-- this container contain the image that hold the registrer ticket -->
+      <img src="images/pattern-ticket.svg" alt="image-container"
+        class="absolute  md:top-117 top-110 w-120   md:left-61 left-0">
+      <div class="toplogo">
+        <img src="images/logo-full.svg" alt="congrateform"
+          class="absolute md:top-121 top-113 md:left-67 left-8 md:w-72 w-58">
+        <h6 id="date" class="date absolute md:top-129 top-122 md:left-79 left-25 font-light">/Austin, TX</h6>
       </div>
-
-      <p id="gitshow" class=" absolute md:top-163 top-149 md:left-86 left-30 font-light"><span id="gitshow"></span></p>
-      <img src="images/icon-github.svg" id="gitt" alt="" class="absolute md:top-163 top-150 md:left-80 left-24">
-      <p> <span id="nameF" class=" absolute md:top-154 top-140 md:left-80 left-25  font-se text-2xl"></span> </p>
-
-
+      <div class="toplogo2">
+        <div id="picture">
+          <span id="picture"> <img id="picture" src=""> </span>
+        </div>
+        <p id="gitshow" class=" absolute md:top-163 top-149 md:left-86 left-30 font-light"><span id="gitshow"></span>
+        </p>
+        <img src="images/icon-github.svg" id="gitt" alt="" class="absolute md:top-163 top-150 md:left-80 left-24">
+        <p> <span id="nameF" class=" absolute md:top-154 top-140 md:left-80 left-25  font-se text-2xl"></span> </p>
+      </div>
+      <div class="toplogousername">
+        <img src="" id="pics" class="absolute md:top-155 top-144 md:left-67 left-10  hidden w-12 h-13 rounded-2xl">
+      </div>
     </div>
-    <div class="toplogousername">
-      <img src="" id="pics" class="absolute md:top-155 top-144 md:left-67 left-10  hidden w-12 h-13 rounded-2xl">
+    <div class="rotate absolute md:top-144 top-135 md:left-160 left-90 rotate-90" id="random">
+      <p>#</p>
+    </div>
 
+    <div id="backgroundCarddesign">
+      <!-- this is for the below background line design -->
+      <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt=""
+        class="relative md:right-127 right-50  h-fit md:w-fit w-40  top-110 ">
+    </div>
+    <div class="topdesignlogo md:relative absolute md:left-250 left-74 md:w-fit w-35 md:top-12 top-4 ">
+    </div>
+    <div>
+      <!-- <img src="images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" class="relative top-140"> -->
     </div>
   </div>
-  <div class="rotate absolute md:top-144 top-135 md:left-160 left-97 rotate-90" id="random">
-    <p>#</p>
-  </div>
 
-  <div id="backgroundCarddesign">
-    <!-- this is for the below background line design -->
-    <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="relative md:right-127 right-50  h-fit md:w-fit w-40  top-110 ">
-  </div>
-  <div class="topdesignlogo md:relative absolute md:left-250 left-74 md:w-fit w-35 md:top-12 top-4 ">  
-    
-    </div>
-</div>
-
-
-
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 <footer style="background-image: url(images/pattern-squiggly-line-bottom-mobile-tablet.svg);"></footer>
 
