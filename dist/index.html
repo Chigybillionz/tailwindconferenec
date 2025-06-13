@@ -19,21 +19,21 @@
   </style> -->
 </head>
 
-<body class="bg-fixed  md:h-screen h-screen  w-screen text-white md:bg-[url('images/background-desktop.png')] 
+<body class="bg-fixed  md:h-screen h-screen md:max-w-11/12 w-screen text-white md:bg-[url('images/background-desktop.png')] 
   bg-[url('images/background-mobile.png')] bg-no-repeat">
   <div class="absolute top-5 right-0 md:top-15 md:right-8 w-40 md:w-96 p-4 md:left-360">
     <img src="images/pattern-squiggly-line-top.svg" alt="">
   </div>
-  <div id="MYFORM" class="relative max-w-11/12 mx-auto p-4  rounded-lg flex items-center justify-center">
+  <div id="MYFORM" class="relative max-w-11/12  p-4  rounded-lg flex items-center justify-center">
     <div id="backgroungLine">
     </div>
     <div id="backgroungCircle1">
       <img src="images/pattern-circle.svg" class="absolute top-150 md:left-316 left-40 md:w-40 w-19">
     </div>
-    <div id="backgroungCircle2" class="absolute md:left-0">
+    <div id="backgroungCircle2" class="absolute md:left-7 top-30 left-19">
       <img src="images/pattern-circle.svg">
     </div>
-    <div class="absolute md:top-8 top-10 left-29 md:left-210 items-center md:w-80">
+    <div class="absolute md:top-8 top-10 left-28 md:left-217 items-center md:w-80">
       <img src="images/logo-full.svg" class="h-6">
     </div>
 
@@ -44,12 +44,12 @@
       class="text-center text-white -600  absolute flex justify-center p-4 md:left-100 left-10 md:top-65 top-53 md:text-4xl text-2xl  md:w-[1100px] w-[320px]">
       Secure your spot at next year's biggest coding conference.</p>
     <div>
-      <h5 id="textUP" class="absolute md:top-89 top-80 md:left-155 left-4">Upload Avatar
+      <h5 id="textUP" class="absolute md:top-89 top-82 md:left-155 left-0">Upload Avatar
       </h5>
     </div>
 
-    <div id="Drag" class="absolute items-center border-2  border-dashed rounded-2xl md:w-165 w-screen h-40 md:left-155 left-0 md:top-100 top-90 
-      transition-transform-300 duration-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
+    <div id="Drag" class="absolute items-center border-2  border-dashed rounded-2xl md:w-165 w-screen h-40 md:left-155 left-2 md:top-100 top-90 
+      transition-transform-50 duration-290 transform hover:scale-100 hover:shadow-lg bg-transparent">
 
       <input type="file" accept="image/jpg,image/png, image/jpeg" id="input-file" class="uploadImage hidden ">
       <label for="input-file" class="avatar-input absolute inset-0 flex items-center justify-center cursor-pointer">
@@ -73,21 +73,20 @@
         </div>
       </label>
     </div>
-    <div class="infoimage">
-      <img src="images/icon-info.svg" alt="" class="absolute md:top-145 top-140 md:w-8 w-5 md:left-155 left-4">
-      <span id="uploadText" class="absolute md:top-146 top-139 md:left-164 left-10">Upload your photo (JPG or PNG, max
-        size:500KB).</span>
+    <div class="infoimage" >
+      <img src="images/icon-info.svg" alt="" class="absolute md:top-145 top-136 md:w-8 w-5 md:left-155 left-3">
+      <span id="uploadText" class="absolute md:top-146 top-135 md:left-164 left-9 font-light w-[350px] ">Upload your photo (JPG or PNG, max size:500KB).</span>
     </div>
 
     <!-- first form -->
-    <div class="absolute form-container md:top-150 top-135  md:w-165 w-screen  h-20 md:left-155 left-1">
+    <div class="absolute form-container md:top-150 top-135  md:w-165 w-screen  h-20 md:left-155 left-2">
       <form action="null" id="myForm">
         <div class="formview  text-white">
           <label for="name"></label> <br><br><br>
           <div class="input-control">
             Full Name
-            <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" class="border-2 md:w-165 w-screen h-13 left-155 focus:border-transparent-500  transition duration-300 transition-transform-300  
-              transform hover:scale-101 hover:shadow-lg bg-transparent rounded-2xl">
+            <input type="text" name="fname" id="username" placeholder="Okorie Chigozie Jehoshaphat" class="border-2 md:w-165 w-screen h-13 focus:border-transparent-500  transition duration-300 transition-transform-300  
+              transform hover:scale-101 hover:shadow-lg bg-transparent rounded-2xl ">
             <br>
 
             <span class="error" id="nameError"></span>
@@ -95,7 +94,7 @@
           <div class="input-control">
             Email Address
             <input type="email" placeholder="chigozie@email.com" name="femail" id="email"
-              class="  border-2 pl-4 rounded-2xl md:w-165 w-screen   h-13 left-155  focus:border-transparent-500  transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent ">
+              class="  border-2 pl-4 rounded-2xl md:w-165 w-screen   h-13  focus:border-transparent-500  transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent ">
             <span class="error" id="emailError"></span>
 
             <label for="email"></label>
@@ -103,20 +102,20 @@
           <!-- <div class="input-control h-12 w-64"> <br> <br> <br>  -->
           GitHub Username
           <input type="text" placeholder="@Yourusername" name="fgithub" id="github"
-            class="border-2 rounded-2xl md:w-165 w-screen h-13 left-95  focus:border-transparent-900 transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
+            class="border-2 rounded-2xl md:w-165 w-screen h-13 focus:border-transparent-900 transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg bg-transparent">
           <br>
           <span class="error" id="githubError"></span>
         </div> <br>
         <div class="input-control">
           <a href="#">
             <button type="submit" id="submit"
-              class="box relative bg-red-500 md:w-165 w-screen py-2 px-2 h-15  rounded-2xl top-6 left-0 focus:border-transparent-900 pl-4 transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg">
+              class="box  relative bg-red-500 md:w-165 w-screen py-2 px-2 h-15  rounded-2xl top-6 left-0 focus:border-transparent-900 pl-4 transition duration-300 transition-transform-300 transform hover:scale-101 hover:shadow-lg">
               Generate My Ticket
             </button>
           </a>
         </div>
         <div id="submitlogodesign"
-          class=" absolute md:top-41 top-77 md:right-40 right-30 md:h-fit h-29 md:w-250 w-96  z-[-1]">
+          class=" absolute md:top-27 top-77 md:right-40 right-30 md:h-fit h-29 md:w-250 w-96  z-[-1]">
           <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt="">
         </div>
     </div>
@@ -125,20 +124,20 @@
 
   <!-- Generated tickets starts -->
 
-  <div class="ticketG hidden absolute inset-0 z-50 transition-opacity duration-500 opacity-0 md:left-109 left-0"
+  <div class="ticketG hidden absolute inset-0 z-50 transition-opacity duration-500 opacity-0 md:left-109 left-0 w-screen "
     id="ticketG">
     <div class="absolute md:w-72 w-72 md:top-8 top-6 ">
       <img src="images/logo-full.svg" alt="ticket generate log"
         class="imagephoto relative md:absolute left-29  w-44 md:w-72 md:left-100 ">
     </div>
     <br>
-    <div class="absolute md:left-0 left-6  md:w-[1100px] w-[405px]">
+    <div class="absolute md:left-0 left-6  md:w-[1100px] w-[335px] ">
       <p
-        class="congratText text-center md:text-6xl text-4xl font-bold text-white -500 md:absolute relative  md:top-20 top-14  ">
+        class="congratText text-center md:text-6xl text-3xl font-bold text-white -500 md:absolute relative  md:top-20 top-14  ">
         Congrats, <span id="nameShow" class="text-orange-400 "></span>! Your ticket is ready.</p>
     </div>
     <p
-      class="weEmailyou absolute md:top-74 top-59 text-2xl md:left-40 left-0 text-center leading-relaxed md:w-[800px] w-[442px]">
+      class="weEmailyou absolute md:top-74 top-59 text-2xl md:left-40 left-0 text-center leading-relaxed md:w-[800px] w-[372px]">
       We've emailed your ticket to <br>
       <span class="text-orange-400" id="emailShow"> </span> and will send updates in <br> the run up to the event.
     </p>
@@ -147,38 +146,37 @@
     <div class="submittion">
       <!-- this container contain the image that hold the registrer ticket -->
       <img src="images/pattern-ticket.svg" alt="image-container"
-        class="absolute  md:top-117 top-110 w-120   md:left-61 left-0">
+        class="absolute  md:top-117 top-110 w-120   md:left-83 left-2">
       <div class="toplogo">
         <img src="images/logo-full.svg" alt="congrateform"
-          class="absolute md:top-121 top-113 md:left-67 left-8 md:w-72 w-58">
-        <h6 id="date" class="date absolute md:top-129 top-122 md:left-79 left-25 font-light">/Austin, TX</h6>
+          class="absolute md:top-121 top-111 md:left-93 left-8 md:w-72 w-58">
+        <h6 id="date" class="date absolute md:top-129 top-120 md:left-110 left-29 font-light">/Austin, TX</h6>
       </div>
       <div class="toplogo2">
         <div id="picture">
           <span id="picture"> <img id="picture" src=""> </span>
         </div>
-        <p id="gitshow" class=" absolute md:top-163 top-149 md:left-86 left-30 font-light"><span id="gitshow"></span>
+        <p id="gitshow" class=" absolute md:top-163 top-145 md:left-116 left-30 font-light"><span id="gitshow"></span>
         </p>
-        <img src="images/icon-github.svg" id="gitt" alt="" class="absolute md:top-163 top-150 md:left-80 left-24">
-        <p> <span id="nameF" class=" absolute md:top-154 top-140 md:left-80 left-25  font-se text-2xl"></span> </p>
+        <img src="images/icon-github.svg" id="gitt" alt="" class="absolute md:top-163 top-145 md:left-110 left-24">
+        <p> <span id="nameF" class=" absolute md:top-154 top-136 md:left-110 left-25  font-se text-2xl"></span> </p>
       </div>
       <div class="toplogousername">
-        <img src="" id="pics" class="absolute md:top-155 top-144 md:left-67 left-10  hidden w-12 h-13 rounded-2xl">
+        <img src="" id="pics" class="absolute md:top-155 top-137 md:left-94 left-7  hidden w-12 h-13 rounded-2xl">
       </div>
     </div>
-    <div class="rotate absolute md:top-144 top-135 md:left-160 left-90 rotate-90" id="random">
+    <div class="rotate absolute md:top-144 top-130 md:left-180 left-82 rotate-90" id="random">
       <p>#</p>
     </div>
-
+<!-- 
     <div id="backgroundCarddesign">
-      <!-- this is for the below background line design -->
       <img src="images/pattern-squiggly-line-bottom-desktop.svg" alt=""
         class="relative md:right-127 right-50  h-fit md:w-fit w-40  top-110 ">
-    </div>
+    </div> -->
     <div class="topdesignlogo md:relative absolute md:left-250 left-74 md:w-fit w-35 md:top-12 top-4 ">
     </div>
     <div>
-      <!-- <img src="images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" class="relative top-140"> -->
+      <img src="images/pattern-squiggly-line-bottom-mobile-tablet.svg" alt="" class="relative top-140">
     </div>
   </div>
 
